@@ -1,0 +1,87 @@
+{
+    "meta": {
+        "timestamp": "2026-03-14T13:14:33+00:00",
+        "php_version": "8.4.17",
+        "iterations": 1,
+        "warmup": 0,
+        "scenarios": [
+            "cold"
+        ],
+        "benchmarks": [
+            "analysis-models",
+            "analysis-http",
+            "analysis-services",
+            "analysis-language"
+        ],
+        "paths": [
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Models",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Http",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Services",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Enums",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Traits",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/DTO",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support",
+            "/Users/ryan/Packages/surveyor/workbench/app/Providers/WorkbenchServiceProvider.php"
+        ],
+        "resolved_paths": [
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/DTO/AddressData.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/DTO/ShipmentData.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Enums/Channel.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Enums/OrderStatus.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Http/Controllers/OrderController.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Http/Requests/StoreOrderRequest.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Models/Order.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Models/OrderItem.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Models/Shipment.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Services/BenchmarkSuite.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Services/OrderPipeline.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Services/ReportBuilder.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/ArrayBlueprint.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/MacroRegistry.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/ProcessingEngine.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/RuleFactory.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/bootstrap_benchmark.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Traits/HasStateTransitions.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Traits/InteractsWithMeta.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Providers/WorkbenchServiceProvider.php"
+        ],
+        "file_count": 20,
+        "baseline_path": null,
+        "output_path": "workbench/storage/benchmarks/analysis-baseline-smoke.json"
+    },
+    "scenarios": {
+        "cold": {
+            "iterations": 1,
+            "warmup": 0,
+            "time_ms": {
+                "min": 1493.948,
+                "median": 1493.948,
+                "mean": 1493.948,
+                "p95": 1493.948,
+                "max": 1493.948
+            },
+            "peak_memory_mb": {
+                "min": 78.5,
+                "median": 78.5,
+                "mean": 78.5,
+                "p95": 78.5,
+                "max": 78.5
+            },
+            "memory_delta_mb": {
+                "min": 52.5,
+                "median": 52.5,
+                "mean": 52.5,
+                "p95": 52.5,
+                "max": 52.5
+            },
+            "measurements": [
+                {
+                    "time_ms": 1493.948,
+                    "memory_delta_mb": 52.5,
+                    "peak_memory_mb": 78.5
+                }
+            ]
+        }
+    },
+    "comparison": []
+}

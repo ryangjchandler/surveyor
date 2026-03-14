@@ -1,0 +1,293 @@
+{
+    "meta": {
+        "timestamp": "2026-03-14T13:22:43+00:00",
+        "php_version": "8.4.17",
+        "iterations": 10,
+        "warmup": 2,
+        "scenarios": [
+            "cold",
+            "warm-memory",
+            "warm-disk"
+        ],
+        "benchmarks": [
+            "analysis-models",
+            "analysis-http",
+            "analysis-services",
+            "analysis-language"
+        ],
+        "paths": [
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Models",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Http",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Services",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Enums",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Traits",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/DTO",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Casts",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support",
+            "/Users/ryan/Packages/surveyor/workbench/app/Providers/WorkbenchServiceProvider.php"
+        ],
+        "resolved_paths": [
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Casts/MinorUnitsCast.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Casts/OrderMetaCast.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/DTO/AddressData.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/DTO/ShipmentData.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Enums/Channel.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Enums/LineItemType.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Enums/OrderStatus.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Enums/ShipmentCarrier.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Http/Controllers/OrderController.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Http/Requests/StoreOrderRequest.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Models/Order.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Models/OrderItem.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Models/Shipment.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Services/BenchmarkSuite.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Services/OrderPipeline.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Services/ReportBuilder.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/ArrayBlueprint.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/MacroRegistry.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/ProcessingEngine.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/RuleFactory.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Support/bootstrap_benchmark.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Traits/HasStateTransitions.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Benchmark/Traits/InteractsWithMeta.php",
+            "/Users/ryan/Packages/surveyor/workbench/app/Providers/WorkbenchServiceProvider.php"
+        ],
+        "file_count": 24,
+        "baseline_path": null,
+        "output_path": "workbench/storage/benchmarks/analysis-baseline-full-20260314.json"
+    },
+    "scenarios": {
+        "cold": {
+            "iterations": 10,
+            "warmup": 2,
+            "time_ms": {
+                "min": 1241.105,
+                "median": 1275.016,
+                "mean": 1271.033,
+                "p95": 1296.92,
+                "max": 1296.92
+            },
+            "peak_memory_mb": {
+                "min": 82.5,
+                "median": 82.5,
+                "mean": 82.5,
+                "p95": 82.5,
+                "max": 82.5
+            },
+            "memory_delta_mb": {
+                "min": 0,
+                "median": 0,
+                "mean": 0.2,
+                "p95": 2,
+                "max": 2
+            },
+            "measurements": [
+                {
+                    "time_ms": 1241.105,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 1241.809,
+                    "memory_delta_mb": 2,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 1255.301,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 1262.679,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 1272.035,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 1277.996,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 1283.552,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 1289.641,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 1289.291,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 1296.92,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                }
+            ]
+        },
+        "warm-memory": {
+            "iterations": 10,
+            "warmup": 2,
+            "time_ms": {
+                "min": 0.039,
+                "median": 0.044,
+                "mean": 0.043,
+                "p95": 0.049,
+                "max": 0.049
+            },
+            "peak_memory_mb": {
+                "min": 82.5,
+                "median": 82.5,
+                "mean": 82.5,
+                "p95": 82.5,
+                "max": 82.5
+            },
+            "memory_delta_mb": {
+                "min": 0,
+                "median": 0,
+                "mean": 0,
+                "p95": 0,
+                "max": 0
+            },
+            "measurements": [
+                {
+                    "time_ms": 0.044,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 0.041,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 0.044,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 0.044,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 0.04,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 0.049,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 0.039,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 0.04,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 0.044,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 0.044,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                }
+            ]
+        },
+        "warm-disk": {
+            "iterations": 10,
+            "warmup": 2,
+            "time_ms": {
+                "min": 4.623,
+                "median": 4.767,
+                "mean": 6.362,
+                "p95": 19.319,
+                "max": 19.319
+            },
+            "peak_memory_mb": {
+                "min": 82.5,
+                "median": 82.5,
+                "mean": 82.5,
+                "p95": 82.5,
+                "max": 82.5
+            },
+            "memory_delta_mb": {
+                "min": 0,
+                "median": 0,
+                "mean": 0,
+                "p95": 0,
+                "max": 0
+            },
+            "measurements": [
+                {
+                    "time_ms": 4.788,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 4.715,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 4.886,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 4.746,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 4.725,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 4.87,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 4.623,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 4.637,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 6.31,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                },
+                {
+                    "time_ms": 19.319,
+                    "memory_delta_mb": 0,
+                    "peak_memory_mb": 82.5
+                }
+            ]
+        }
+    },
+    "comparison": []
+}

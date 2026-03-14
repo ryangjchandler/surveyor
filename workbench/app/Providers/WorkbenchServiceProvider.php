@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Benchmark\Services\BenchmarkSuite;
+use App\Benchmark\Support\ArrayBlueprint;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class WorkbenchServiceProvider extends ServiceProvider
@@ -11,7 +14,7 @@ class WorkbenchServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(BenchmarkSuite::class, fn () => new BenchmarkSuite);
     }
 
     /**
@@ -19,6 +22,10 @@ class WorkbenchServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $config = ArrayBlueprint::defaults();
+
+        if (($config['locale'] ?? null) === 'en_US') {
+            Route::pattern('benchmark_ref', '[A-Z0-9\-]+');
+        }
     }
 }
